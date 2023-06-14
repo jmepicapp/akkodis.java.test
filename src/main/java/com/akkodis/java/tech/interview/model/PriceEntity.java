@@ -29,9 +29,9 @@ public class PriceEntity {
 
     @ManyToOne
     @JoinColumn(name = "PRODUCT_ID")
-    private Product product;
+    private ProductEntity product;
 
-    private int priority;
+    private Integer priority;
 
     @Column(scale = 2)
     private double price;

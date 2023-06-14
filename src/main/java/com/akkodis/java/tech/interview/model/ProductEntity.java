@@ -3,13 +3,15 @@ package com.akkodis.java.tech.interview.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.Getter;
+import lombok.Data;
 
 @Entity
 @Table(name = "PRODUCTS")
-@Getter
-public class Product {
+@Data
+public class ProductEntity {
 
     @Id
     private Long id;
+    private String name;
+    private String description;
 }

@@ -3,11 +3,11 @@ package com.akkodis.java.tech.interview.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.Getter;
+import lombok.Data;
 
 @Entity
 @Table(name = "BRANDS")
-@Getter
+@Data
 public class BrandEntity {
 
     @Id
